@@ -48,30 +48,9 @@ You can download pretrained models here:
 
 Our model achieves the following performance on :
 
-<head>
-<style>
-.container { 
-  height: 200px;
-  position: relative;
-  border: 0px solid green; 
-}
-
-.center {
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-</style>
-</head>
-
-<div class="container">
-  <div class="center">
-    <p><img src=/Reproducibility_report/gifs/orig_punc.gif width="200" height="200">  --->  <img src=/Reproducibility_report/gifs/punc_Complex_L2_reg_epoch_300_lamb_0.03.gif width="200" height="200">
-  </div>
-</div>
+<p align="center">
+  <img src=/Reproducibility_report/gifs/orig_punc.gif width="200" height="200">  --->  <img src=/Reproducibility_report/gifs/punc_Complex_L2_reg_epoch_300_lamb_0.03.gif width="200" height="200">
+</p>
 
 ### [Image Classification on ImageNet](https://paperswithcode.com/sota/image-classification-on-imagenet)
 
