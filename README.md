@@ -48,6 +48,7 @@ You can download pretrained models here:
 
 Our model achieves the following performance on :
 
+<head>
 <style>
 .container { 
   height: 200px;
@@ -64,6 +65,7 @@ Our model achieves the following performance on :
   transform: translate(-50%, -50%);
 }
 </style>
+</head>
 
 <div class="container">
   <div class="center">
