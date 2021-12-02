@@ -23,7 +23,7 @@ To train the model(s) in the paper, run this command:
 ```train
 python train.py --input-data <path_to_data> --alpha 10 --beta 20
 ```
-
+![](/Reproducibility_report/gifs/1m_112x112_punc_speckles.gif)
 >📋  Describe how to train the models, with example commands on how to train the models in your paper, including the full training procedure and appropriate hyperparameters.
 
 ## Evaluation
