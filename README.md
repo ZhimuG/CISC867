@@ -48,9 +48,9 @@ You can download pretrained models here:
 
 Our model achieves the following performance on :
 
-<table><tr><td valign="center">
+<p valign="center">
   <img src=/Reproducibility_report/gifs/orig_punc.gif width="200" height="200">  --->  <img src=/Reproducibility_report/gifs/punc_Complex_L2_reg_epoch_300_lamb_0.03.gif width="200" height="200">
-</td></tr></table>
+</p>
 
 ### [Image Classification on ImageNet](https://paperswithcode.com/sota/image-classification-on-imagenet)
 
