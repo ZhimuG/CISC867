@@ -30,9 +30,9 @@ Here is a quick overview of the models we recreated from the original paper and 
   <td align="center">Multi-res model</td>
 </tr>
   <tr>
-    <td align="center"><img src=/Reproducibility_report/figures/Forward_model.png></td>
-    <td align="center"><img src=/Reproducibility_report/figures/Inverse_model_updated.png></td>
-    <td align="center"><img src=/Reproducibility_report/figures/multi-res.png></td>
+    <td align="center"><img src=/Reproducibility_report/figures/Forward_model.PNG></td>
+    <td align="center"><img src=/Reproducibility_report/figures/Inverse_model_updated.PNG></td>
+    <td align="center"><img src=/Reproducibility_report/figures/multi-res.PNG></td>
   </tr>
 </table>
 
