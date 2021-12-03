@@ -21,12 +21,20 @@ First, here is what a motion picture looks like before and after transmitting th
 
 ## Model Description
 
-Here is a quick overview of the models we recreated from the original paper and used in this reproducibility report. First is a forward model for our complex neural network:
+Here is a quick overview of the models we recreated from the original paper and used in this reproducibility report:
 
-<object data="/Reproducibility_report/figures/Forward_model.pdf" type="application/pdf">
-  <embed src="/Reproducibility_report/figures/Forward_model.pdf">
-  </embed>
-</object>
+<table>
+<tr>
+  <td align="center">Forward model</td>
+  <td align="center">Inverse model</td>
+  <td align="center">Multi-res model</td>
+</tr>
+  <tr>
+    <td align="center"><img src=/Reproducibility_report/figures/Forward_model.png></td>
+    <td align="center"><img src=/Reproducibility_report/figures/Inverse_model_updated.png></td>
+    <td align="center"><img src=/Reproducibility_report/figures/multi-res.png></td>
+  </tr>
+</table>
 
 ## Requirements
 
@@ -60,10 +68,6 @@ The first notebook contains all the models, all with 300 epochs. Second notebook
 ## Results
 
 Our model achieves the following performance on :
-
-<p align="center">
-  <img src=/Reproducibility_report/gifs/orig_punc.gif width="200" height="200">  --->  <img src=/Reproducibility_report/gifs/punc_Complex_L2_reg_epoch_300_lamb_0.03.gif width="200" height="200">
-</p>
 
 ### [Image Classification on ImageNet](https://paperswithcode.com/sota/image-classification-on-imagenet)
 
