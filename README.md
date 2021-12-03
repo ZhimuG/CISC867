@@ -94,6 +94,7 @@ Here are the output images from our model tested using an untrained dataset (one
 
 ## Contributing
 <a href="https://github.com/ahmed6795" target="_blank">Ahmed Khaled</a>, <a href="https://github.com/ZhimuG" target="_blank">Zhimu Guo</a>   \
-<a href="https://www.queensu.ca/physics/" target="_blank">Department of Physics, Engineering Physics, and Astronomy</a>  \
-<a href="https://www.queensu.ca/" target="_blank">Queen's University</a>  \
+Members of <a href="https://www.queensu.ca/physics/shastrilab/" target="_blank">Shastri Lab</a>,  \
+<a href="https://www.queensu.ca/physics/" target="_blank">Department of Physics, Engineering Physics, and Astronomy</a>,  \
+<a href="https://www.queensu.ca/" target="_blank">Queen's University</a>,  \
 <a href="https://www.google.ca/maps/place/Queen's+University/@44.2252795,-76.4973299,17z/data=!3m1!4b1!4m5!3m4!1s0x4cd2ab0fccd925e9:0x268a8a4f5c257211!8m2!3d44.2252795!4d-76.4951412?hl=en" target="_blank">Kingston, ON K7L 3N6</a>
