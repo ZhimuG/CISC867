@@ -4,7 +4,11 @@
 
 This repository is the official implementation of [Deep, complex, invertible networks for inversion of transmission effects in multimode optical fibres](https://papers.nips.cc/paper/2018/hash/148510031349642de5ca0c544f31b2ef-Abstract.html). 
 
->📋  Optional: include a graphic explaining your approach/main result, bibtex entry, link to demos, blog posts and tutorials
+Here is what a speckle image looks like:
+
+![](/Reproducibility_report/gifs/1m_112x112_punc_speckles.gif)
+
+%>📋  Optional: include a graphic explaining your approach/main result, bibtex entry, link to demos, blog posts and tutorials
 
 ## Requirements
 
