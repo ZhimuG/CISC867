@@ -36,6 +36,8 @@ Here is a quick overview of the models we recreated from the original paper and 
   </tr>
 </table>
 
+> Detailed description of all three models can be found in our reproducibility report.
+
 ## Requirements
 
 Main packages used to run our models in the reproducibility report:
@@ -61,25 +63,37 @@ All models were divided into four notebooks:
   <li>Final_Paper_Pytorch_With_Comments_V2_part1.ipynb</li>  
 </ul>
 
-The first notebook contains all the models, all with 300 epochs. Second notebook only contains the six models with different regularizations, and all with 600 epochs. Third notebook only contains the six models again, but with ReLU activations and 300 epochs. Four notebook only contains the same six models but with 1000 epochs.
+The first notebook contains all the models, all with 300 epochs. Second notebook only contains the seven models with different regularizations, and all with 600 epochs. Third notebook only contains the seven models again, but with ReLU activations and 300 epochs. Four notebook only contains the same seven models but with 1000 epochs.
 
 >Each notebook will take anywhere between 3 to 6 hours to complete.
 
 ## Results
 
-Our model achieves the following performance on :
+Here we divide all test results into three sections: tests with different regularizations, tests with different speckle resolutions, and tests on untrained datasets.
 
-### [Image Classification on ImageNet](https://paperswithcode.com/sota/image-classification-on-imagenet)
+### Regularization tests
+Here we include the training results from the seven models with different regularizations. Below is a quick look at the training loss after certain number of epochs for all seven models:
+<img src=/Reproducibility_report/figures/Table4.PNG>
 
-| Model name         | Top 1 Accuracy  | Top 5 Accuracy |
-| ------------------ |---------------- | -------------- |
-| My awesome model   |     85%         |      95%       |
+The final outputs from all seven models are shown as following:
+<img src=/Reproducibility_report/figures/regularization_fig.PNG>
 
->📋  Include a table of results from your paper, and link back to the leaderboard for clarity and context. If your main result is a figure, include that figure and link to the command or notebook to reproduce it.
+
+### Speckle resolution tests
+Here are the MSE values obtained from tests with different speckle resolutions:
+<img src=/Reproducibility_report/figures/Table6.PNG>
+
+And here are the final output images from tests with different speckle resolutions:
+<img src=/Reproducibility_report/figures/multi-res_fig.PNG>
+
+### Untrained datasets
+Here are the output images from our model tested using an untrained dataset (one that is never seen by the network):
+<img src=/Reproducibility_report/figures/still_shot.PNG>
+> All figures and tables in this section can be found in our Reproducibility report, along with more detailed explanations.
 
 
 ## Contributing
-Ahmed Khaled, Zhimu Guo   \
-Department of Physics, Engineering Physics, and Astronomy  \
-Queen's University  \
-Kingston, ON K7L 3N6
+<a href="https://github.com/ahmed6795" target="_blank">Ahmed Khaled</a>, <a href="https://github.com/ZhimuG" target="_blank">Zhimu Guo</a>   \
+<a href="https://www.queensu.ca/physics/" target="_blank">Department of Physics, Engineering Physics, and Astronomy</a>  \
+<a href="https://www.queensu.ca/" target="_blank">Queen's University</a>  \
+<a href="https://www.google.ca/maps/place/Queen's+University/@44.2252795,-76.4973299,17z/data=!3m1!4b1!4m5!3m4!1s0x4cd2ab0fccd925e9:0x268a8a4f5c257211!8m2!3d44.2252795!4d-76.4951412?hl=en" target="_blank">Kingston, ON K7L 3N6</a>
