@@ -6,9 +6,9 @@ First, here is what a motion picture looks like before and after transmitting th
 
 <table>
 <tr>
-  <td align="center">Before</td>
-  <td align="center">Speckle</td>
-  <td align="center">After</td>
+  <td align="center">Original</td>
+  <td align="center">Speckle (distorted)</td>
+  <td align="center">Reconstructed</td>
 </tr>
   <tr>
     <td align="center"><img src=/Reproducibility_report/gifs/orig_punc.gif width="200" height="200"></td>
@@ -21,22 +21,20 @@ First, here is what a motion picture looks like before and after transmitting th
 
 ## Model Description
 
-Here is a quick overview of the models we recreated from the original paper and used in this reproducibility report:
+Here is a quick overview of the main pipelines of the models we recreated from the original paper and used in this reproducibility report:
 
 <table>
 <tr>
-  <td align="center">Forward model</td>
   <td align="center">Inverse model</td>
-  <td align="center">Multi-res model</td>
+  <td align="center">Multi-Res inverse model</td>
 </tr>
   <tr>
-    <td align="center"><img src=/Reproducibility_report/figures/Forward_model.PNG></td>
     <td align="center"><img src=/Reproducibility_report/figures/Inverse_model_updated.PNG></td>
     <td align="center"><img src=/Reproducibility_report/figures/multi-res.PNG></td>
   </tr>
 </table>
 
-> Detailed description of all three models can be found in our reproducibility report.
+> Detailed description of all models can be found in our reproducibility report.
 
 ## Requirements
 
@@ -53,29 +51,33 @@ Hardware requirements:
   <li>32 GB of system memory</li>
 </ul>
 
-## Training
+## Training and Testing
 
-All models were divided into four notebooks:
+We have three experiments:
+-Part 1: Building all of the inverse model variants (7 models) with different dense layer types (complex-valued and real-valued), different regularization methods and different loss functions. 
+-Part 2: Training one of our models with different speckle resolutions to check the effect of speckle resolutions on mean square error (MSE) results of the models.
+-Part 3: Checking the generalization of the models by using a new dataset not seen during training (some shots taken from a movie, shown in the GIF above).
+
+We have four four notebooks:
 <ul>
-  <li>Final_Paper_Pytorch_With_Comments_V1.ipynb</li>
-  <li>Final_Paper_Pytorch_With_Comments_V1_part1.ipynb</li>
-  <li>Final_Paper_Pytorch_With_Comments_V1_part1_relu.ipynb</li>
-  <li>Final_Paper_Pytorch_With_Comments_V2_part1.ipynb</li>  
+  <li>Final_Paper_Pytorch_With_Comments_V1_All_parts.ipynb: It has all parts with part 1 models trained with linear activations for 300 epochs</li>
+  <li>Final_Paper_Pytorch_With_Comments_V1_part1_600epochs.ipynb: It has part 1 models trained with linear activations for 600 epochs</li>
+  <li>Final_Paper_Pytorch_With_Comments_V1_part1_1000epochs.ipynb: It has part 1 models trained with linear activations for 1000 epochs</li>
+  <li>Final_Paper_Pytorch_With_Comments_V1_part1_relu_300epochs.ipynb: It has part 1 models trained with ReLU activations for 300 epochs</li>
+  <li>Final_Paper_Pytorch_With_Comments_V2_part1_relu_1000epochs.ipynb: It has part 1 models trained with ReLU activations for 1000 epochs</li>  
 </ul>
 
-The first notebook contains all the models, all with 300 epochs. Second notebook only contains the seven models with different regularizations, and all with 600 epochs. Third notebook only contains the seven models again, but with ReLU activations and 300 epochs. Four notebook only contains the same seven models but with 1000 epochs.
-
->Each notebook will take anywhere between 3 to 6 hours to complete.
+>Each notebook will take anywhere between 3 (300 epochs) to 10 (1000 epochs) hours to complete.
 
 ## Results
 
-Here we divide all test results into three sections: tests with different regularizations, tests with different speckle resolutions, and tests on untrained datasets.
+Here we divide all test results into three sections: tests with different layer types, regularizations and training loss functions, tests with different speckle resolutions, and tests on new datasets not seen during training.
 
-### Regularization tests
-Here we include the training results from the seven models with different regularizations. Below is a quick look at the training loss after certain number of epochs for all seven models:
+### MSE testing results 
+Here we include the training results from the seven models with different layer types, regularizations and training loss functions:
 <img src=/Reproducibility_report/figures/Table4.PNG>
 
-The final outputs from all seven models are shown as following:
+Example outputs from all seven models are shown as following:
 <img src=/Reproducibility_report/figures/regularization_fig.PNG>
 
 
@@ -83,13 +85,18 @@ The final outputs from all seven models are shown as following:
 Here are the MSE values obtained from tests with different speckle resolutions:
 <img src=/Reproducibility_report/figures/Table6.PNG>
 
-And here are the final output images from tests with different speckle resolutions:
+And here are example output images from tests with different speckle resolutions:
 <img src=/Reproducibility_report/figures/multi-res_fig.PNG>
 
-### Untrained datasets
-Here are the output images from our model tested using an untrained dataset (one that is never seen by the network):
+### New datasets not seen in training
+The models generalize well to new datasets not seen in training, meaning that they represent the true inverse transmission matrix of the fiber. The short movie at the beginning of the page is an example (was not seen in training).
+Here are some screenshots from it:
 <img src=/Reproducibility_report/figures/still_shot.PNG>
 > All figures and tables in this section can be found in our Reproducibility report, along with more detailed explanations.
+
+### Results beyond those reported in the original paper
+We found that increasing the number of epochs and using ReLU activation improved the performance signficantly as one would expect, yet the authors did not try that. The maximum MSE enhancement we got was 20.47% when using 1000 epochs and ReLU activation for Model No. 6.
+<img src=/Reproducibility_report/figures/extra.PNG>
 
 
 ## Contributing
