@@ -25,8 +25,8 @@ Here is a quick overview of the main pipelines of the models we recreated from t
 
 <table>
 <tr>
-  <td align="center">Inverse model</td>
-  <td align="center">Multi-Res inverse model</td>
+  <td align="center">Inverse model (Pipeline A)</td>
+  <td align="center">Multi-Res inverse model (Pipeline B)</td>
 </tr>
   <tr>
     <td align="center"><img src=/Reproducibility_report/figures/Inverse_model_updated.PNG></td>
