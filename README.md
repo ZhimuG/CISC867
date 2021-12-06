@@ -64,7 +64,7 @@ We have four four notebooks:
   <li>Final_Paper_Pytorch_With_Comments_V1_part1_600epochs.ipynb: It has part 1 models trained with linear activations for 600 epochs</li>
   <li>Final_Paper_Pytorch_With_Comments_V1_part1_1000epochs.ipynb: It has part 1 models trained with linear activations for 1000 epochs</li>
   <li>Final_Paper_Pytorch_With_Comments_V1_part1_relu_300epochs.ipynb: It has part 1 models trained with ReLU activations for 300 epochs</li>
-  <li>Final_Paper_Pytorch_With_Comments_V2_part1_relu_1000epochs.ipynb: It has part 1 models trained with ReLU activations for 1000 epochs</li>  
+  <li>Final_Paper_Pytorch_With_Comments_V1_part1_relu_1000epochs.ipynb: It has part 1 models trained with ReLU activations for 1000 epochs</li>  
 </ul>
 
 >Each notebook will take anywhere between 3 (300 epochs) to 10 (1000 epochs) hours to complete.
