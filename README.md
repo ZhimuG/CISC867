@@ -95,7 +95,7 @@ Here are some screenshots from it:
 > All figures and tables in this section can be found in our Reproducibility report, along with more detailed explanations.
 
 ### Results beyond those reported in the original paper
-We found that increasing the number of epochs and using ReLU activation improved the performance signficantly as one would expect, yet the authors did not try that. The maximum MSE enhancement we got was 20.47% when using 1000 epochs and ReLU activation for Model No. 6.
+We found that increasing the number of epochs and using ReLU activation improved the performance signficantly as one would expect, yet the authors did not try that. The maximum MSE enhancement we got was 20.47% when using 1000 epochs and ReLU activation for Model No. 6 (check the first table in the Results section in this page for models' description).
 <img src=/Reproducibility_report/figures/extra.PNG>
 
 
